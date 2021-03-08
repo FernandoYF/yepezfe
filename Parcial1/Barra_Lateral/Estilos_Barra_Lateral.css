@@ -1,0 +1,170 @@
+* {
+    margin: 0; padding: 0;
+    color: royalblue;
+    background-color: whitesmoke;
+    font-family: 'Arial';
+}
+.classMenu li 
+{
+    font-weight: bold;
+    background-color: black;
+}
+.classMenu li:hover 
+{
+    background-color: whitesmoke;
+}
+.classMenu span 
+{
+    display: contents;
+    font-family: 'Arial';
+    font-size: 1.5em;
+}
+.classContenido h3
+{
+    font-family: 'Arial';
+    font-size: 4em;
+}
+.classContenido div 
+{
+    padding-left: 100px; padding-right: 100px;
+}
+.classContenido p
+{
+    padding: 0; margin: 0;
+    font-family: 'Arial';
+    font-size: 1.5em;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) 
+{
+
+    h3
+    {
+        font-family: 'Arial';
+        color: black;
+    } 
+    body>div
+    {
+        display: inline;
+    }
+    .classMenu ul
+    {
+        padding: 10px;
+        list-style-type: none;
+    }
+    .classMenu li 
+    {
+        text-align: center;
+        padding: 10px; margin-bottom: 10px;
+    }
+    .classContenido 
+    {
+        max-width: 100%;
+    }
+    .classContenido div 
+    {
+        padding-left: 5%; padding-right: 5%;
+    }
+    .classContenido p
+    {
+        font-family: 'Arial';
+        font-size: .5em;
+        padding: 0; margin: 0;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 600px) 
+{
+
+    h3
+    {
+        font-family: 'Arial';
+        color: royalblue;
+    } 
+    body
+    {
+        display: inline;
+    }
+
+    .classMenu ul
+    {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .classMenu li
+    {
+        margin:1%; padding-top: 10px; padding-bottom: 10px; border-radius: 10px;
+        width: 20%;
+        display: inline-block;
+    }
+    .classContenido 
+    {
+        max-width: 100%;
+    }
+    .classContenido div 
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .classContenido p
+    {
+        font-family: 'Arial';
+        font-size: 2em;
+        padding: 0; margin: 0;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 992px) 
+{
+    h3
+    {
+        color: black;
+    } 
+    body div
+    {
+        display: inline-block;
+    }  
+    .classMenu 
+    {
+        width: 10%;
+        margin: 0%;
+        float: left;
+        text-align: center;
+    }    
+    .classMenu ul 
+    {
+        padding-top: 0px; margin: 0px;
+        list-style-type: none;
+        vertical-align: middle;
+        background-color: whitesmoke;
+    }   
+    .classMenu li 
+    {
+        padding-top: 25px; padding-bottom: 25px; margin: 0px; border-radius: 0px;
+        display: block;
+        width: 100%;
+    }  
+    .classContenido
+    {
+        max-width: 85%;
+    }  
+    .classContenido div 
+    {
+        padding-top: 10px; padding-bottom: 100px;
+    }
+
+}
