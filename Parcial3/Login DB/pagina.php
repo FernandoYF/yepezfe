@@ -1,5 +1,6 @@
 <?php
         session_start();
-        echo "<h1>Bienvenido, inicio sesión " . $_SESSION["usuario"] . "</h1>";
-        <p><a href="salir.php">Cerrar Sesión</a></p>
+        
+        <p><a href="Bienvenido">:)</a></p>
+        <p><a href="Salir.php">Cerrar Sesión</a></p>
 ?>
