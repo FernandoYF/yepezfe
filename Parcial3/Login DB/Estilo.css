@@ -1,0 +1,12 @@
+body {
+    background-image: radial-gradient(circle at 64.94% -5.76%, #9fdadf 0, #9fdae4 4.55%, #a1d9e8 9.09%, #a3d8eb 13.64%, #a6d7ee 18.18%, #aad6f1 22.73%, #afd5f3 27.27%, #b4d3f4 31.82%, #bad2f4 36.36%, #c0d0f4 40.91%, #c7cff3 45.45%, #cdcdf2 50%, #d3cbf0 54.55%, #d9caed 59.09%, #dfc8ea 63.64%, #e4c7e6 68.18%, #e9c6e2 72.73%, #edc5de 77.27%, #f0c4d9 81.82%, #f3c3d4 86.36%, #f5c3cf 90.91%, #f6c3ca 95.45%, #f7c3c5 100%)
+}
+h1 {
+    text-align: center;
+}
+.txtb {
+    text-align: center;
+}
+.form-control {
+    text-align: center;
+}
