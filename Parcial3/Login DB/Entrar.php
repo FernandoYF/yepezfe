@@ -16,6 +16,6 @@ if ($validarLogin->rowCount() > 0) {
         ';
     //header("Location: pagina.php");
     exit;
-
+}
 ?>
 
