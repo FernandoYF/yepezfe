@@ -11,7 +11,7 @@
     <title>LOGIN BD</title>
   </head>
       <body>
-        <form action = "Entrar.php" method = "post" class="login-form" >
+        <form action = "Entrar.php" method = "POST" class="login-form" >
           <div class="container col-xs-4 col-sm-4 col-md-3 col-lg-4">
             <h1> Inicio de sesión</h1>
           <div class="txtb form-group">
@@ -20,7 +20,7 @@
           </div>
           <div class="txtb form-group">
             <label for="Contraseña">Contraseña:</label>
-            <input  class="form-control" type="password" name="Contraseña" placeholder="*****" required>               
+            <input  class="form-control" type="password" name="contra" placeholder="*****" required>               
           </div>
           <div class="col text-center p-2">
             <input id= "Enviar"  type="submit" class="logbtn" value="Login">
