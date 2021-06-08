@@ -11,6 +11,7 @@
     <?php
         session_start();
         echo '<script language="javascript">alert("BIENVENIDO: '.$_SESSION['Usuario'].'");</script>';
+        echo "<h3>HOLA!!:  " . $_SESSION["Usuario"] . "</h3><br>";
     ?>
     <br>
     <script type="text/javascript">
