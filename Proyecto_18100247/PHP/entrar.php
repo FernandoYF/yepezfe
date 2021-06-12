@@ -17,9 +17,9 @@
         $Usuario = $_POST['Usuario'];
         $contra = $_POST['contra'];
         $contra = md5($contra);
-        $Login = $conexion->prepare("SELECT * FROM Usuario WHERE Nickname='$Usuario' and Contraseña='$contra'");
-        $Login->execute();
-        if ($Login->rowCount() > 0) {
+        $Entrar = $conexion->prepare("SELECT * FROM Usuario WHERE Nickname='$Usuario' and Contraseña='$contra'");
+        $Entrar->execute();
+        if ($Entrar->rowCount() > 0) {
             $_SESSION['Usuario'] = $Usuario;
             echo'<script type="text/javascript">
             alert("Iniciando sesión en:'.$_SESSION['Usuario'].'");

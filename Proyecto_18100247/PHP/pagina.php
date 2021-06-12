@@ -26,13 +26,13 @@
                     <label class="text-light">Descripcion:</label>
                     <input  class="form-control" type="text" name="Descripcion" placeholder="Pizza con..." id="D"required>               
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-2">
                     <label class="text-light">Gramos:</label>
-                    <input  class="form-control" type="text" name="Gramos" placeholder="200.00" id="G" required>               
+                    <input  class="form-control" type="text" name="Gramos" placeholder="200.00" id="G" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>               
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-2">
                     <label class="text-light">Precio:</label>
-                    <input  class="form-control" type="text" name="Precio" placeholder="300.00" id="P" required>               
+                    <input  class="form-control" type="text" name="Precio" placeholder="300.00" id="P" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>               
                 </div>
             </div>
                 <div class="col text-center p-4">
@@ -54,7 +54,7 @@
                     </tr>
                     </thead>
 
-          <?php foreach ($consulta->query("SELECT * from PIZZA") as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+          <?php foreach ($consulta->query("SELECT * from PIZZA") as $row){  ?> 
                         <tr>
 	                        <td><?php echo $row['numero']  ?></td>
                             <td><?php echo $row['nombre'] ?></td>
@@ -69,7 +69,7 @@
                     <div class= text-center>
                         <a href="salir.php">Cerrar sesión</a>
                     </div>
-        </div>
+            </div>
    		
 	</body>
 </html>

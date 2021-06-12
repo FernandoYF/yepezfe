@@ -9,6 +9,7 @@ if(isset($_POST['registrar']))
     $consulta->query("SET NAMES 'UTF8'"); //si no no me trae correcta la variable:(
     $Asignar = $consulta->prepare("INSERT INTO PIZZA (nombre, descripcion, gramos, precio)VALUES('$Nombre', '$Des', '$Gra', '$Pre')");
     $Asignar->execute();
+    
     echo'<script type="text/javascript">
     alert("Se agrego la pizza correctamente:)");
     window.location.href="pagina.php";

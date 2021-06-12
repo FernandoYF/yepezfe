@@ -21,12 +21,12 @@
     $Login->execute();
     if ($Login->rowCount() > 0) {
         $_SESSION['Usuario'] = $Usuario;
-        header("Location: pagina.php");
+        header("Location: jsgrid.html");
     exit;
 }
 else{
         echo '<script language="javascript">alert("Contraseña o Usuario incorrectos:( intenta denuevo");</script>';
-        header("Location: index.php");
+        //header("Location: index.php");
 }
 ?>
 

@@ -27,7 +27,7 @@
                 </div>
                 <br> <br> <br> <br>
           
-                <?php $consulta = new PDO('mysql:host=localhost;dbname=YEPEZFE', 'root', 'Nando123'); ?>
+                <?php $conectar = new PDO('mysql:host=localhost;dbname=YEPEZFE', 'root', 'Nando123'); ?>
 
                     <table class="table" name="tablita">
                         <thead class="table-dark">
@@ -40,7 +40,7 @@
                         </tr>
                         </thead>
 
-                <?php foreach ($consulta->query("SELECT * from PIZZA") as $row){ ?> 
+                <?php foreach ($conectar->query("SELECT * from PIZZA") as $row){ ?> 
                         <tr>
                             <td><?php echo $row['numero']  ?></td>
                             <td><?php echo $row['nombre'] ?></td>
