@@ -40,7 +40,7 @@
                         </tr>
                         </thead>
 
-                <?php foreach ($consulta->query("SELECT * from PIZZA") as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+                <?php foreach ($consulta->query("SELECT * from PIZZA") as $row){ ?> 
                         <tr>
                             <td><?php echo $row['numero']  ?></td>
                             <td><?php echo $row['nombre'] ?></td>

@@ -12,25 +12,25 @@
         echo "Ha ocurrido un error al conectar a $bd";
         echo $error->getMessage();
         exit();
-    }
-    $conexion->query("SET NAMES 'UTF8'"); //si no no me trae correcta la variable:(
-    $Usuario = $_POST['Usuario'];
-    $contra = $_POST['contra'];
-    $contra = md5($contra);
-    $Login = $conexion->prepare("SELECT * FROM Usuario WHERE Nickname='$Usuario' and Contraseña='$contra'");
-    $Login->execute();
-    if ($Login->rowCount() > 0) {
-        $_SESSION['Usuario'] = $Usuario;
-        echo'<script type="text/javascript">
-        alert("Iniciando sesión en:'.$_SESSION['Usuario'].'");
-        window.location.href="pagina.php";
-        </script>'; 
-        exit;
+                              }
+        $conexion->query("SET NAMES 'UTF8'"); //si no no me trae correcta la variable:(
+        $Usuario = $_POST['Usuario'];
+        $contra = $_POST['contra'];
+        $contra = md5($contra);
+        $Login = $conexion->prepare("SELECT * FROM Usuario WHERE Nickname='$Usuario' and Contraseña='$contra'");
+        $Login->execute();
+        if ($Login->rowCount() > 0) {
+            $_SESSION['Usuario'] = $Usuario;
+            echo'<script type="text/javascript">
+            alert("Iniciando sesión en:'.$_SESSION['Usuario'].'");
+            window.location.href="pagina.php";
+            </script>'; 
+            exit;
 }
-    else{
-        echo'<script type="text/javascript">
-        alert("Usuario / Contraseña incorrectos, intente denuevo:(");
-        window.location.href="index.php";
-        </script>'; 
-}
+        else{
+            echo'<script type="text/javascript">
+            alert("Usuario / Contraseña incorrectos, intente denuevo:(");
+            window.location.href="index.php";
+            </script>'; 
+            }
     ?>
